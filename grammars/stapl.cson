@@ -1,0 +1,67 @@
+'scopeName':	'source.stapl'
+'name':			'Stapl'
+'fileTypes':	['stapl']
+
+'patterns':		[
+	{
+	    'match': '\\b(fun)\\s+(\\w+)\\s*'
+	    'captures':
+	        '1':
+	            'name': 'keyword.control.staple'
+	        '2':
+	            'name': 'entity.name.function.staple'
+	    'name': 'meta.function.staple'
+	},
+
+	{
+	    'match': '\\b(call)\\s+(\\w+)\\s*'
+	    'captures':
+	        '1':
+	            'name': 'keyword.control.staple'
+	        '2':
+	            'name': 'entity.name.function.staple'
+	    'name': 'meta.function.staple'
+	},
+
+	{
+	    'match': '\\b(stack|store|load|size)\\s+(\\w+)\\s*'
+	    'captures':
+	        '1':
+	            'name': 'keyword.control.staple'
+	        '2':
+	            'name': 'entity.name.variable.staple'
+	    'name': 'meta.function.staple'
+	},
+
+	{
+	    'match': '\\b(get|set)\\s+(\\w+)\\s*'
+	    'captures':
+	        '1':
+	            'name': 'keyword.control.staple'
+	        '2':
+	            'name': 'entity.name.variable.staple'
+	    'name': 'meta.function.staple'
+	},
+
+	{
+		'match':	'add|sub|mul|div|mod|push|pops|pop|cpy|stof|rand|call|if|ret|printstack|prints|print|read|end'
+		'name':		'keyword.staple'
+	},
+
+	{
+		'begin':	'%'
+		'end':		'%'
+		'name':		'comment.staple'
+	},
+
+	{
+		'begin':	'"'
+		'end':		'"'
+		'name':		'constant.string.staple'
+	},
+
+	{
+	    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+	    'name': 'constant.numeric.staple'
+	}
+]

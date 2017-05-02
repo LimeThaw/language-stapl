@@ -1,0 +1,19 @@
+{
+  "name": "language-stapl",
+  "main": "./lib/language-stapl",
+  "version": "0.0.1",
+  "description": "Grammar package for the STAck based Programming Language",
+  "keywords": [
+  ],
+  "activationCommands": {
+
+  },
+  "repository": "https://github.com/atom/language-stapl",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+	  
+  }
+}
